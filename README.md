@@ -81,3 +81,37 @@ For troubleshooting, check the terminal or browser console for errors.
 Support
 
 If you encounter any issues running the project, please contact me. I would be happy to help.
+
+
+
+
+
+
+
+
+
+
+Subject: Daily Update and Pending Test Cases
+
+Hi [Manager's Name],
+
+Please find attached the document in which I have covered all the unexpected behaviors in Moody’s Sanction, along with the screenshots for the completed test cases. Four test cases are still pending due to the lack of data. I’ll begin working on those as soon as the data is available and will attach the corresponding screenshots afterward.
+
+Today’s Updates:
+
+Created 2 new test cases for SCIG-3802.
+
+Performed manual testing for 3 test cases.
+
+Currently working on automation for 1 test case (data available).
+
+Unable to proceed with automation for the remaining test cases due to lack of data.
+
+Also, please find the attached Excel sheet where I’ve updated today’s progress.
+
+Let me know if you need any additional information.
+
+Best regards,
+[Your Name]
+
+
