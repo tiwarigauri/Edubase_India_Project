@@ -81,16 +81,3 @@ For troubleshooting, check the terminal or browser console for errors.
 Support
 
 If you encounter any issues running the project, please contact me. I would be happy to help.
-
-
-Screenshot Attached for Null BVD ID Issue
-
-Hi [Manager's Name],
-
-As discussed, I have attached the screenshot related to the issue we encountered—where the BVD ID is returning as null after clicking the "Launch Sanction 360" button.
-
-Please let me know if you need any further details or if there's anything else I can assist with.
-
-Best regards,
-[Your Full Name]
-[Your Position, if needed]
