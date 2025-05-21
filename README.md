@@ -81,3 +81,77 @@ For troubleshooting, check the terminal or browser console for errors.
 Support
 
 If you encounter any issues running the project, please contact me. I would be happy to help.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Feature: AMC API Authentication and GFC to BvD ID mapping
+ 
+  Scenario: Verify valid GFC ID returns correct BvD ID
+    Given I have a valid access token
+    When I send a request with GFC ID "CITI123456"
+    Then the API should return BvD ID "BVD998877"
+ 
+import io.cucumber.java.en.*;
+import io.restassured.response.Response;
+ 
+import static io.restassured.RestAssured.*;
+import static org.junit.Assert.*;
+ 
+public class GfcToBvdSteps {
+ 
+    private String token;
+    private Response response;
+    private String gfcId;
+ 
+    @Given("I have a valid access token")
+    public void i_have_a_valid_access_token() throws Exception {
+        token = AMCAuthUtils.fetchAccessToken(); // uses developer’s getToken() logic
+        assertNotNull("Access token should not be null", token);
+    }
+ 
+    @When("I send a request with GFC ID {string}")
+    public void i_send_a_request_with_gfc_id(String gfcId) {
+        this.gfcId = gfcId;
+ 
+        String baseUrl = mapPropertyKeyValue.get("AMC_API_BASE_URL");
+ 
+        response = given()
+                .baseUri(baseUrl)
+                .header("Authorization", "Bearer " + token)
+                .header("Accept", "application/json")
+                .queryParam("gfcId", gfcId) // Or use .body() if POST
+                .when()
+                .get("/v1/gfc-to-bvd"); // Replace with actual endpoint path
+    }
+ 
+    @Then("the API should return BvD ID {string}")
+    public void the_api_should_return_bvd_id(String expectedBvdId) {
+        response.then().statusCode(200);
+        String actualBvdId = response.jsonPath().getString("bvdId");
+        assertEquals("Mismatch in BvD ID", expectedBvdId, actualBvdId);
+    }
+}
+ 
+public class AMCAuthUtils {
+    public static String fetchAccessToken() throws Exception {
+        return YourTokenClass.getToken(); // Developer-provided method
+    }
+}
+ 
