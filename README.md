@@ -81,27 +81,3 @@ For troubleshooting, check the terminal or browser console for errors.
 Support
 
 If you encounter any issues running the project, please contact me. I would be happy to help.
-
-
- 
-Hi Team,
- 
-Since you won’t be able to join today’s call with Moody’s, I’m sharing the key discussion points here so you’re aware of what will be covered:
- 
-1. I reviewed the Moody’s document where they’re tracking issues. One of the issues—the correct username not being reflected on Moody’s side—still persists. However, they have marked it as closed, so this needs to be re-checked with them.
- 
- 
-2. Cache issues are still not resolved.
- 
- 
-3. Clicking on "Sign Out" is not clearing the currently logged-in username data.
- 
- 
-4. Apart from the issues, we also need to ask them for a test case scenario where we will receive a 502 error due to technical issues from their side. We need this to test how our system handles such cases, so we’ll ask if they can provide a setup for it.
- 
- 
- 
-Let me know if anything else should be added.
- 
-Thanks!
- 
