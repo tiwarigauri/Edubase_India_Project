@@ -82,17 +82,3 @@ Support
 
 If you encounter any issues running the project, please contact me. I would be happy to help.
 
-
-
-1. Where is the error message stored?
-2. In the browser’s local storage/session storage,
-
-In a hidden DOM element (not visible but still in HTML),
-
-Or only in backend logs or database, which may not be testable from UI automation.
-
-2. Is the error message returned in the API response body or only logged internally?
-3. If it’s in the response body, your test can:
-Capture it from the network logs or stub it using mocks.
-Can we access the stored BvDID value from the front-end?
-4. “How can I check if BvDID is stored as null in the UI or any browser storage after AMC API failure?”
