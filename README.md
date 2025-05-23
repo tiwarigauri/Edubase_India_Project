@@ -81,3 +81,56 @@ For troubleshooting, check the terminal or browser console for errors.
 Support
 
 If you encounter any issues running the project, please contact me. I would be happy to help.
+
+
+Feature: AMC API Failure Scenarios
+
+  Scenario: Handle 400 Bad Request when fetching BvDID from AMC
+    Given a CSAW-C Level 2 user accesses the KYC SMB alert
+    When the user clicks on "Launch Sanctions 360"
+    And the AMC API returns 400 Bad Request
+    Then the system should store the error message "Bad Request - Missing parameters"
+    And the BvDID should be null
+
+  Scenario: Handle 401 Unauthorized when fetching BvDID from AMC
+    Given a CSAW-C Level 3 user accesses the KYC SMB alert
+    When the user clicks on "Launch Sanctions 360"
+    And the AMC API returns 401 Unauthorized
+    Then the system should store the error message "Unauthorized - Invalid token"
+    And the BvDID should be null
+
+  Scenario: Handle 403 Forbidden when fetching BvDID from AMC
+    Given a CSAW-C Level 2 user accesses the KYC SMB alert
+    When the user clicks on "Launch Sanctions 360"
+    And the AMC API returns 403 Forbidden
+    Then the system should store the error message "Forbidden - Token not provided"
+    And the BvDID should be null
+
+  Scenario: Handle 404 Not Found when fetching BvDID from AMC
+    Given a CSAW-C Level 3 user accesses the KYC SMB alert
+    When the user clicks on "Launch Sanctions 360"
+    And the AMC API returns 404 Not Found
+    Then the system should store the error message "Not Found - Invalid GFC ID/Host"
+    And the BvDID should be null
+
+  Scenario: Handle 409 Conflict when fetching BvDID from AMC
+    Given a CSAW-C Level 2 user accesses the KYC SMB alert
+    When the user clicks on "Launch Sanctions 360"
+    And the AMC API returns 409 Conflict
+    Then the system should store the error message "Conflict - Duplicate/Invalid state"
+    And the BvDID should be null
+
+  Scenario: Handle 500 Internal Server Error when fetching BvDID from AMC
+    Given a CSAW-C Level 3 user accesses the KYC SMB alert
+    When the user clicks on "Launch Sanctions 360"
+    And the AMC API returns 500 Internal Server Error
+    Then the system should store the error message "Internal Server Error"
+    And the BvDID should be null
+
+  Scenario: Handle 503 Service Unavailable when fetching BvDID from AMC
+    Given a CSAW-C Level 2 user accesses the KYC SMB alert
+    When the user clicks on "Launch Sanctions 360"
+    And the AMC API returns 503 Service Unavailable
+    Then the system should store the error message "Service Unavailable - AMC down"
+    And the BvDID should be null
+
