@@ -83,3 +83,15 @@ Support
 If you encounter any issues running the project, please contact me. I would be happy to help.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+@And("the AMC API returns {int} {word}")
+public void amcApiReturnsStatus(int statusCode, String statusName) {
+    WireMock.stubFor(WireMock.get(WireMock.urlPathEqualTo("/accounts/pmm"))
+            .withQueryParam("search", WireMock.matching(".*"))  // You can replace .* with actual regex if needed
+            .withQueryParam("projection", WireMock.matching(".*"))
+            .willReturn(WireMock.aResponse()
+                    .withStatus(statusCode)
+                    .withHeader("Content-Type", "application/json")
+                    .withBody("{\"error\":\"" + statusName + "\"}")));
+}
