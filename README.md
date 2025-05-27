@@ -83,4 +83,33 @@ Support
 If you encounter any issues running the project, please contact me. I would be happy to help.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@Then("the user should see the Sanctions 360 search screen in a new tab")
+public void userShouldSeeSanctionsSearchScreenInNewTab() {
+    // Wait and capture the URL and BvD ID (assumes they are stored in JS variables or available via attributes)
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+    // Example: assuming BvDID and Launch URL are logged or accessible via JS or DOM
+    JavascriptExecutor js = (JavascriptExecutor) driver;
+    String launchUrl = (String) js.executeScript("return window.sessionStorage.getItem('launchUrl');");
+    String bvdId = (String) js.executeScript("return window.sessionStorage.getItem('bvdId');");
+
+    System.out.println("BvD ID: " + bvdId);
+    System.out.println("Launch URL: " + launchUrl);
+
+    // Validate BvD ID is null or empty
+    Assert.assertTrue("Expected BvD ID to be null/empty", bvdId == null || bvdId.isEmpty());
+
+    // Open new tab and switch to it
+    js.executeScript("window.open();");
+    ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+    driver.switchTo().window(tabs.get(1));
+
+    // Navigate to the launch URL
+    driver.get(launchUrl);
+
+    // Verify Search Screen using input field
+    WebElement searchInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("companyName")));
+    String placeholder = searchInput.getAttribute("placeholder");
+    Assert.assertEquals("Enter name or VDID", placeholder);
+}
 
