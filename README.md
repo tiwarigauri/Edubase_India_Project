@@ -83,3 +83,20 @@ Support
 If you encounter any issues running the project, please contact me. I would be happy to help.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Following our recent testing analysis, I would like to bring to your attention a couple of issues we have observed:
+
+As per our previous analysis, the message “Refused to connect to Moody’s login page” should be displayed to users who are currently logged into CSawc but do not have a valid email address with the @citi.com domain. However, during Diane’s testing using a valid user ID on the Edge browser, she encountered the “Refused to connect” message and was unable to see client details. Interestingly, when she tested the same alert and user ID on Chrome, the client details were displayed correctly. This discrepancy between browsers needs further investigation.
+
+Additionally, I noticed an issue while clicking the Moody’s button for an alert associated with a user having a valid email ID. On the first click, a popup displayed the error message “Cannot destructure property 'data'” (please refer to the attached screenshots). Checking the browser console revealed some JavaScript errors. After closing the popup and clicking the Moody’s button again, the client details appeared correctly. This suggests a possible intermittent JavaScript issue that requires attention.
+
+Please find the relevant screenshots attached for your reference.
+
+Kindly look into these matters and advise on the next steps. Let me know if you need any further information from our side.
+
+Best regards,
+[Your Name]
+[Your Position]
+[Your Contact Information]
+
