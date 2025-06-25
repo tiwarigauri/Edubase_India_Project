@@ -83,26 +83,3 @@ Support
 If you encounter any issues running the project, please contact me. I would be happy to help.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Subject: Update on Defect Raised by ICRM Team – Moody's Integration Issue
-
-Hi [Recipient's Name],
-
-I hope you are doing well.
-
-This is regarding the defect raised by the ICRM team related to the Moody’s integration issue. We understand the urgency and wanted to share an update along with the reasons for the delay in resolution.
-
-After thorough analysis and continuous follow-up with the Moody’s team, we have identified that the root cause of the issue lies on their end. Please find below a summary of our findings and communication so far:
-
-On June 12th, we analyzed that the issue was occurring due to the sub field in the payload and reached out to the Moody’s team for further clarification.
-
-We also observed that the Moody’s screen behaves inconsistently – sometimes it works for the same alert ID and sometimes it does not. This behavior has been communicated to the Moody’s team.
-
-Subsequently, we identified that the “Refused to connect” issue was related to the email field. Initially, Moody’s confirmed that this field was optional. However, after deeper analysis and discussions with them, it was clarified that only user IDs with valid email addresses (domain @citi.com) are able to see the client details on the Moody’s popup. For user IDs without a valid email, the popup redirects to the Moody’s login page with the connection refusal.
-
-Further testing on the Edge browser revealed that even valid user IDs with proper email addresses were facing the same issue. We escalated this to the Moody’s team a few days ago.
-
-In response, they requested additional data including the HAR file for further analysis. We will be sharing a follow-up email today with the requested details to help expedite the fix.
-
-We truly appreciate your patience and understanding while we work with the Moody’s team to resolve this. We will continue to keep you informed of any updates or progress on this issue.
-
-Please find attached all the relevant emails we have sent to the Moody’s team so far for your reference.
