@@ -83,3 +83,24 @@ Support
 If you encounter any issues running the project, please contact me. I would be happy to help.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Subject: Issue with Client Details Visibility in Edge – Resolved via Browser Settings
+
+Hi [Recipient's Name],
+
+Following our discussion with the Moody's team, we investigated the issue where Bhaskar was unable to view client details in Edge, while it worked fine in Chrome.
+
+Upon checking, I found that I was able to view the client details in both Edge and Chrome. The difference was due to a browser setting in Edge related to cookies.
+
+For both Bhaskar and Diane, the setting "Block third-party cookies" was enabled under Cookies and Site Data in Edge. In contrast, for those of us who were able to view the client details successfully, this setting was disabled.
+
+After updating this setting in Diane's Edge browser (by turning off "Block third-party cookies"), she can now proceed with the testing as expected.
+
+Please find the screenshot attached for reference.
+
+Let me know if you need any further details.
+
+Best regards,
+[Your Name]
+
