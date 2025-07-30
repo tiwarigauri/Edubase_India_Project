@@ -83,26 +83,4 @@ Support
 If you encounter any issues running the project, please contact me. I would be happy to help.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-Subject: Clarification on In-Sprint Automation Timeline
- 
-Hi [Manager's Name],
- 
-I wanted to inform you that I am currently engaged in regression automation work, which is why I haven't been able to focus on in-sprint automation so far.
- 
-If I begin working on the in-sprint stories from Monday, 4th August, I will have approximately one week to cover the following:
- 
-Story 6850, 6851: Test case creation and testing are already completed; I just need to work on automation.
- 
-Story 7630, 7633: Both test case creation and testing are pending and need to be completed within this time frame.
- 
- 
-Considering the tight schedule, I believe automation may not be feasible for these stories within the given timeline. However, manual testing is possible and can be completed within the sprint.
- 
-Please let me know your thoughts and if you would prefer I proceed with manual testing or suggest an alternative approach.
-Also, for automation, I will require one full sprint.
- 
-Best regards,
-Gauri
  
