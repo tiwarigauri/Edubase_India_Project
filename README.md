@@ -85,22 +85,24 @@ If you encounter any issues running the project, please contact me. I would be h
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Subject: Issue with Client Details Visibility in Edge – Resolved via Browser Settings
-
-Hi [Recipient's Name],
-
-Following our discussion with the Moody's team, we investigated the issue where Bhaskar was unable to view client details in Edge, while it worked fine in Chrome.
-
-Upon checking, I found that I was able to view the client details in both Edge and Chrome. The difference was due to a browser setting in Edge related to cookies.
-
-For both Bhaskar and Diane, the setting "Block third-party cookies" was enabled under Cookies and Site Data in Edge. In contrast, for those of us who were able to view the client details successfully, this setting was disabled.
-
-After updating this setting in Diane's Edge browser (by turning off "Block third-party cookies"), she can now proceed with the testing as expected.
-
-Please find the screenshot attached for reference.
-
-Let me know if you need any further details.
-
+Subject: Clarification on In-Sprint Automation Timeline
+ 
+Hi [Manager's Name],
+ 
+I wanted to inform you that I am currently engaged in regression automation work, which is why I haven't been able to focus on in-sprint automation so far.
+ 
+If I begin working on the in-sprint stories from Monday, 4th August, I will have approximately one week to cover the following:
+ 
+Story 6850, 6851: Test case creation and testing are already completed; I just need to work on automation.
+ 
+Story 7630, 7633: Both test case creation and testing are pending and need to be completed within this time frame.
+ 
+ 
+Considering the tight schedule, I believe automation may not be feasible for these stories within the given timeline. However, manual testing is possible and can be completed within the sprint.
+ 
+Please let me know your thoughts and if you would prefer I proceed with manual testing or suggest an alternative approach.
+Also, for automation, I will require one full sprint.
+ 
 Best regards,
-[Your Name]
-
+Gauri
+ 
