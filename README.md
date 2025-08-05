@@ -83,3 +83,22 @@ Support
 If you encounter any issues running the project, please contact me. I would be happy to help.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Accomplishments for Last Month
+ 
+Worked extensively on Moody's S360 application, ensuring thorough end-to-end testing with a focus on zero UAT defects from Citi's side.
+ 
+Ensured all UAT test cases were executed on SIT with close attention to detail to avoid any issues in the UAT phase.
+ 
+Actively coordinated with product owners, developer teams, and the Moody's team to clarify requirements and eliminate ambiguity in any scenario.
+ 
+Applied the same rigorous and structured approach to Moody's Orbis application, covering every possible scenario and ensuring nothing was left unclear or untested.
+ 
+Identified and tracked a few issues from Orbis, promptly raised them, and ensured proper follow-up and clarifications were taken.
+ 
+Contributed to regression testing efforts, completing a significant number of test cases efficiently—also worked additional hours over weekends to ensure timely and quality delivery.
+ 
+Continuously keeping note of any past mistakes or missed areas, and taking proactive measures to ensure such issues are not repeated in future stories.
+ 
+Focused on smart testing approaches—optimizing test coverage by leveraging AI tools like GitHub Copilot to identify potential gaps in scenarios and improve overall testing efficiency.
+ 
+Used Copilot to validate and enhance test coverage, asking it to suggest additional edge cases or scenarios to maintain the highest quality standards.
